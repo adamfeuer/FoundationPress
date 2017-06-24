@@ -4,12 +4,38 @@
   @include hide-for(medium);
 }
 
-.desktop-menu,
-.site-navigation .top-bar-left {
-  @include show-for(medium);
+.title-bar {
+    padding: 0;
 }
 
+.title-bar-description {
+    color: $white;
+    font-family: 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif;
+    font-size: 75%;
+}
 
+.desktop-menu,
+.site-navigation .top-bar-left,
+.site-navigation .top-bar-right,
+.site-navigation .top-bar-right .menu-item {
+  @include show-for(medium);
+  background: #2c3840;
+}
+
+.site-navigation .top-bar-left {
+    margin-left: 3rem;
+}
+
+.site-navigation .top-bar-right {
+    margin-right: 3rem;
+}
+
+.site-navigation .top-bar-left .top-bar-title a,
+.site-navigation .top-bar-right a,
+.site-navigation .top-bar-right .menu-item a {
+  color: $white;
+  font-family: 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif;
+}
 
 // Site title
 .site-mobile-title a {
@@ -67,9 +93,12 @@
   @include breakpoint(small only) {
     padding: 0; // prevents container visibility on small screens
   }
+  background: #2c3840;
 }
 
-
+.top-bar-right {
+  background-color: #2c3840;
+}
 
 // WP post navigation
 .post-navigation {

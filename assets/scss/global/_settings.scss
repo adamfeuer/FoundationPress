@@ -43,6 +43,77 @@
 
 @import '../../components/foundation-sites/scss/util/util';
 
+
+// 0. Custom Fonts
+
+@font-face {
+    font-family: 'crimson_textbold';
+    src: url('fonts/crimsontext-bold-webfont.eot');
+    src: url('fonts/crimsontext-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/crimsontext-bold-webfont.woff') format('woff'),
+         url('fonts/crimsontext-bold-webfont.ttf') format('truetype'),
+         url('fonts/crimsontext-bold-webfont.svg#crimson_textbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'crimson_textbold_italic';
+    src: url('fonts/crimsontext-bolditalic-webfont.eot');
+    src: url('fonts/crimsontext-bolditalic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/crimsontext-bolditalic-webfont.woff') format('woff'),
+         url('fonts/crimsontext-bolditalic-webfont.ttf') format('truetype'),
+         url('fonts/crimsontext-bolditalic-webfont.svg#crimson_textbold_italic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'crimson_textitalic';
+    src: url('fonts/crimsontext-italic-webfont.eot');
+    src: url('fonts/crimsontext-italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/crimsontext-italic-webfont.woff') format('woff'),
+         url('fonts/crimsontext-italic-webfont.ttf') format('truetype'),
+         url('fonts/crimsontext-italic-webfont.svg#crimson_textitalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'crimson_textroman';
+    src: url('fonts/crimsontext-roman-webfont.eot');
+    src: url('fonts/crimsontext-roman-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/crimsontext-roman-webfont.woff') format('woff'),
+         url('fonts/crimsontext-roman-webfont.ttf') format('truetype'),
+         url('fonts/crimsontext-roman-webfont.svg#crimson_textroman') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'crimson_textsemibold';
+    src: url('fonts/crimsontext-semibold-webfont.eot');
+    src: url('fonts/crimsontext-semibold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/crimsontext-semibold-webfont.woff') format('woff'),
+         url('fonts/crimsontext-semibold-webfont.ttf') format('truetype'),
+         url('fonts/crimsontext-semibold-webfont.svg#crimson_textsemibold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'crimson_textsemibold_italic';
+    src: url('fonts/crimsontext-semibolditalic-webfont.eot');
+    src: url('fonts/crimsontext-semibolditalic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/crimsontext-semibolditalic-webfont.woff') format('woff'),
+         url('fonts/crimsontext-semibolditalic-webfont.ttf') format('truetype'),
+         url('fonts/crimsontext-semibolditalic-webfont.svg#crimson_textsemibold_italic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
 // 1. Global
 // ---------
 
@@ -63,7 +134,8 @@ $black: #0a0a0a;
 $white: #fefefe;
 $body-background: $white;
 $body-font-color: $black;
-$body-font-family: 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif;
+// $body-font-family: 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif;
+$body-font-family: 'crimson_textroman', serif;
 $body-antialiased: true;
 $global-margin: 1rem;
 $global-padding: 1rem;
