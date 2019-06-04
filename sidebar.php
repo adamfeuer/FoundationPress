@@ -1,5 +1,12 @@
-<aside id="sidebar" class="small-12 large-4 columns">
-	<?php do_action('foundationPress_before_sidebar'); ?>
-	<?php dynamic_sidebar("sidebar-widgets"); ?>
-	<?php do_action('foundationPress_after_sidebar'); ?>
+<?php
+/**
+ * The sidebar containing the main widget area
+ *
+ * @package FoundationPress
+ * @since FoundationPress 1.0.0
+ */
+
+?>
+<aside class="sidebar">
+	<?php dynamic_sidebar( 'sidebar-widgets' ); ?>
 </aside>

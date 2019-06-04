@@ -1,15 +1,24 @@
-</section>
-<footer class="row">
-	<?php do_action('foundationPress_before_footer'); ?>
-	<?php dynamic_sidebar("footer-widgets"); ?>
-	<?php do_action('foundationPress_after_footer'); ?>
-</footer>
-<a class="exit-off-canvas"></a>
+<?php
+/**
+ * The template for displaying the footer
+ *
+ * Contains the closing of the "off-canvas-wrap" div and all content after.
+ *
+ * @package FoundationPress
+ * @since FoundationPress 1.0.0
+ */
+?>
 
-	<?php do_action('foundationPress_layout_end'); ?>
+<footer class="footer-container">
+	<div class="footer-grid">
+		<?php dynamic_sidebar( 'footer-widgets' ); ?>
 	</div>
-</div>
+</footer>
+
+<?php if ( get_theme_mod( 'wpt_mobile_menu_layout' ) === 'offcanvas' ) : ?>
+	</div><!-- Close off-canvas content -->
+<?php endif; ?>
+
 <?php wp_footer(); ?>
-<?php do_action('foundationPress_before_closing_body'); ?>
 </body>
 </html>
